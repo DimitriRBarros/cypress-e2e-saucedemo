@@ -1,0 +1,21 @@
+{
+  "name": "cypress-e2e-saucedemo",
+  "version": "1.0.0",
+  "description": "Projeto de testes E2E com Cypress para Sauce Demo",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:headed": "cypress run --headed",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "test": "cypress run"
+  },
+
+  "devDependencies": {
+    "cypress": "^14.5.3"
+  },
+  
+  "keywords": ["cypress", "e2e", "testing", "automation"],
+  "author": "QA Team",
+  "license": "MIT"
+}

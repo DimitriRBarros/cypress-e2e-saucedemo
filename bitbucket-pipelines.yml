@@ -1,0 +1,42 @@
+/*
+image: cypress/browsers:node-20.10.0-chrome-124.0.6367.207-1-ff-124.0-edge-124.0
+
+pipelines:
+  default:
+    - step:
+        name: 🧪 Cypress E2E Tests
+        caches:
+          - node
+        script:
+          - npm ci
+          - npx cypress run --browser chrome
+        artifacts:
+          - cypress/videos/**
+          - cypress/screenshots/**
+        
+  branches:
+    main:
+      - step:
+          name: 🚀 Production E2E Tests
+          caches:
+            - node
+          script:
+            - npm ci
+            - npx cypress run --browser chrome --spec "cypress/e2e/**"
+          artifacts:
+            - cypress/videos/**
+            - cypress/screenshots/**
+            
+  pull-requests:
+    '**':
+      - step:
+          name: 🔍 PR E2E Tests
+          caches:
+            - node
+          script:
+            - npm ci
+            - npx cypress run --browser chrome
+          artifacts:
+            - cypress/videos/**
+            - cypress/screenshots/**
+*/
