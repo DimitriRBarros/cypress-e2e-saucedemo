@@ -189,7 +189,7 @@ Os resultados dos testes incluem:
 
 ---
 
-**Autor:** QA Team  
+**Autor:** Dimitri Barros  
 **Versão:** 1.0.0  
 **Cypress:** 14.x+
 */
