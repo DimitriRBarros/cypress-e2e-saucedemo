@@ -1,4 +1,3 @@
-/*
 # 🧪 Cypress E2E - Sauce Demo
 
 Projeto de testes automatizados End-to-End utilizando Cypress para o site Sauce Demo.
@@ -192,4 +191,3 @@ Os resultados dos testes incluem:
 **Autor:** Dimitri Barros  
 **Versão:** 1.0.0  
 **Cypress:** 14.x+
-*/
